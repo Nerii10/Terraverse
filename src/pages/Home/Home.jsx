@@ -103,7 +103,7 @@ export default function Home() {
                         variants={fadeInVariant}
                         transition={{delay:0.4,damping:20, type:'spring'}}
                         initial="initial"
-                        whileInView="animate"
+                        animate="animate"
                         viewport={{once:true}}
                         >
             
@@ -234,11 +234,11 @@ export default function Home() {
                                   ></motion.img>
                             <h2>Core systems in Terraria</h2>
                             <p>Terraria offers endless possibilities – here are just a few of them:</p>
-                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Iron_Anvil.png' style={{width:"30px"}}></img> <strong>Crafting:</strong> over 5000 items to create!</p>
-                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/guide.png' style={{width:"30px"}}></img> <strong>NPCs:</strong> build rooms to invite merchants and allies.</p>
-                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Soul_of_Night.png' style={{width:"30px"}}></img> <strong>Hardmode:</strong> after defeating the Wall of Flesh, the world becomes tougher – and more thrilling.</p>
-                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Bloody_Tear.png' style={{width:"30px"}}></img>  <strong>Events:</strong> Blood Moons, Goblin Invasions, Solar Eclipses… be prepared!</p>
-                            </div>
+                            <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Iron_Anvil.png' style={{width:"30px"}}></img> over 5000 items to create!</p>
+                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/guide.png' style={{width:"30px"}}></img>  build rooms to invite merchants and allies.</p>
+                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Soul_of_Night.png' style={{width:"30px"}}></img> after defeating the Wall of Flesh, the world becomes tougher – and more thrilling.</p>
+                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Bloody_Tear.png' style={{width:"30px"}}></img> Blood Moons, Goblin Invasions, Solar Eclipses… be prepared!</p>
+                       </div>
             
                         </motion.section>
             
@@ -270,9 +270,24 @@ export default function Home() {
                         <div className='HomeGrassTop'></div>
                     </div>
 
-                    <div className='HomeDesc'>
-                        <h1 style={{margin:0}}>Terraverse</h1>
-                        <p style={{margin:0}}>Your personal Terraria wiki</p>
+                    <div className='HomeDesc' style={{overflow:"hidden"}}>
+
+                        <motion.h1 
+                          variants={fadeInVariant}
+                          transition={{delay:0,damping:20, type:'spring'}}
+                          initial="initial"
+                          animate="animate"
+                          viewport={{once:true}}
+                        style={{margin:0}}>Terraverse</motion.h1>
+
+                        <motion.p 
+                          variants={fadeInVariant}
+                          transition={{delay:0.1,damping:20, type:'spring'}}
+                          initial="initial"
+                          animate="animate"
+                          viewport={{once:true}}
+                          style={{margin:0}}>Your personal Terraria wiki</motion.p>
+
                     </div>
 
                     <br></br>
@@ -281,7 +296,14 @@ export default function Home() {
 
                     <br></br>
                     <br></br>
-                    <section className="SectionMobile">
+
+                        <motion.section className="SectionMobile"
+                      variants={fadeInVariant}
+                      transition={{delay:0.2,damping:20, type:'spring'}}
+                      initial="initial"
+                      animate="animate"
+                      viewport={{once:true}}
+                      >
             
                             <div className='SectionMobileText'>
             
@@ -312,15 +334,20 @@ export default function Home() {
             
                             </div>
                             
-                        </section>
+                        </motion.section>
                         
                         <br></br>
                         <br></br>
             
-                        <section className="SectionMobile">
+                        <motion.section className="SectionMobile"
+                      variants={fadeInVariant}
+                      transition={{delay:0.3,damping:20, type:'spring'}}
+                      initial="initial"
+                      whileInView="animate"
+                      viewport={{once:true}}>
                             
                             <div className='SectionMobileText'>
-                            <h2>🌍 What is Terraria?</h2>
+                            <h2>What is Terraria?</h2>
                             <p>
                             Terraria is a 2D sandbox action game where exploration, combat, crafting, and survival all come together.
                             Each world is randomly generated – with unique biomes, NPCs, dungeons, and secrets. Will you survive the night? Can you defeat the King Slime or the Moon Lord?
@@ -348,14 +375,20 @@ export default function Home() {
                                   style={{position:"absolute", top:"-147px", left:"160px", width:"150px"}}
                                   ></img>
                               </div>
-                        </section>
+                        </motion.section>
             
                         <br></br>
                         <br></br>
             
-                        <section className="SectionMobile">
+                        <motion.section className="SectionMobile"
+                          variants={fadeInVariant}
+                          transition={{delay:0.4,damping:20, type:'spring'}}
+                          initial="initial"
+                          whileInView="animate"
+                          viewport={{once:true}}>
+                            
                             <div className='SectionMobileText'>
-                                <h2>🛠️ Just getting started?</h2>
+                                <h2>Just getting started?</h2>
                                 <p>
                                 New players can easily feel overwhelmed – and that’s okay! Here are the basic steps:
                                 </p>
@@ -379,36 +412,48 @@ export default function Home() {
                                   style={{position:"absolute", top:"-200px", right:"10px", width:"150px"}}
                                   ></motion.img>
                               </div>
-                        </section>
+                        </motion.section>
             
                      
                         <br></br>
                         <br></br>
     
-                        <section className="HomeMechanics">
+                        <motion.section className="HomeMechanics"
+                          variants={fadeInVariant}
+                          transition={{delay:0.5,damping:20, type:'spring'}}
+                          initial="initial"
+                          whileInView="animate"
+                          viewport={{once:true}}
+                          >
                            
                             <div className='HomeMechanicsText'>
                                <motion.img src={'/Terraverse/img_sprites/Cog.png'}
                                   style={{position:"absolute", top:"-10px", left:"-10px", width:"30px", rotateZ:`${Scroll/2}deg`}}
                                   ></motion.img>
-                            <h2>⚙️ Core systems in Terraria</h2>
+                            <h2>Core systems in Terraria</h2>
                             <p>Terraria offers endless possibilities – here are just a few of them:</p>
-                            <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Iron_Anvil.png' style={{width:"30px"}}></img> <strong>Crafting:</strong> over 5000 items to create!</p>
-                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/guide.png' style={{width:"30px"}}></img> <strong>NPCs:</strong> build rooms to invite merchants and allies.</p>
-                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Soul_of_Night.png' style={{width:"30px"}}></img> <strong>Hardmode:</strong> after defeating the Wall of Flesh, the world becomes tougher – and more thrilling.</p>
-                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Bloody_Tear.png' style={{width:"30px"}}></img>  <strong>Events:</strong> Blood Moons, Goblin Invasions, Solar Eclipses… be prepared!</p>
+                            <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Iron_Anvil.png' style={{width:"30px"}}></img> over 5000 items to create!</p>
+                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/guide.png' style={{width:"30px"}}></img>  build rooms to invite merchants and allies.</p>
+                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Soul_of_Night.png' style={{width:"30px"}}></img> after defeating the Wall of Flesh, the world becomes tougher – and more thrilling.</p>
+                                    <p style={{display:"flex", justifyContent:'start',alignItems:'center',flexDirection:'row', gap:"20px",width:"90%"}}><img src='/Terraverse/img_sprites/Bloody_Tear.png' style={{width:"30px"}}></img> Blood Moons, Goblin Invasions, Solar Eclipses… be prepared!</p>
 
                             </div>
             
-                        </section>
+                        </motion.section>
             
             
-                        <section className="QuoteSection">
+                        <motion.section className="QuoteSection"
+                          variants={fadeInVariant}
+                          transition={{delay:0.6,damping:20, type:'spring'}}
+                          initial="initial"
+                          whileInView="animate"
+                          viewport={{once:true}}
+                          >
                             <blockquote>
                             <p>“You feel an evil presence watching you...”</p>
                             <cite>— Terraria</cite>
                             </blockquote>
-                        </section>
+                        </motion.section>
             
                     </section>
         

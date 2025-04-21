@@ -98,3 +98,52 @@
     transition: 0.5s ease;
 
 }
+
+@media only screen and (max-width:700px) {
+    .NavbarIcon{
+        width: 45px;
+    }
+
+    .NavbarConainerRight{
+        width: 100%;
+        display: flex;
+        z-index: 2;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5vw
+    }
+
+    .NavbarInput{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .NavbarIcon{
+        width: 25px;
+        margin-left: -10px;
+    }
+
+    .NavbarConainerRight{
+        width: 100%;
+        display: flex;
+        z-index: 2;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5vw
+    }
+
+    .NavbarInput{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+}
