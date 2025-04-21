@@ -1,0 +1,182 @@
+.Title{
+    color:rgb(92, 92, 92);
+    background-color: var(--secondBackground);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.MainContainer{
+    background-color: var(--secondBackground);
+    width: 100%;
+    color:rgb(92, 92, 92);
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.SearchBarContainer{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.SearchText{
+    font-size: 16px;
+    border:1px rgba(94, 94, 94, 0.352) solid;
+    border-radius: 15px;
+    background-color: white;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    height: 30px;
+}
+
+.SearchButton{
+    font-size: 14px;
+    border:1px rgba(94, 94, 94, 0.352) solid;
+    border-radius: 15px;
+    color:rgb(150, 150, 150);
+    font-weight: 0;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.Library{
+    background-color: var(--AccentColor);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-height: 400px;
+    min-height: 50px;
+    overflow: auto;
+    border: 1px var(--AccentBorder) solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.NpcEntry{
+    height: 160px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: var(--MainAccentColor);
+    color:white;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    flex-direction: column;
+    border: 1px var(--AccentBorder) solid;
+    color:rgb(71, 71, 71);
+    cursor: pointer;
+
+}
+
+.NpcEntryImage{
+    flex-shrink: 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.SellingItem{
+    background-color: var(--MainAccentColor);
+    color:white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center; align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px var(--AccentBorder) solid;
+}
+
+.SellingList{
+    background-color: var(--AccentColor);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 5px;
+    border: 1px var(--AccentBorder) solid;
+    border-top: 0px var(--AccentBorder) solid;
+    overflow: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.FilterBox{
+    display: flex;
+    position: sticky;
+    top:90px;
+    max-width: 80%;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.199);
+    justify-content: center;
+    border:1px var(--AccentBorder) solid;
+    z-index: 24;
+    padding: 10px 15px;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    gap: 20px;
+}
+
+.FilterButton{
+    background-color: rgb(153, 153, 223);
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px rgba(0, 0, 0, 0.182) solid;
+}
+
+.DropEntry{
+    height: 100px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: var(--MainAccentColor);
+    color:white;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px var(--AccentBorder) solid;
+    color:rgb(71, 71, 71);
+}
+
+.DropImage{
+    height: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.DropQuantity{
+    height: 15%;
+}
+
+.DropProbability{
+    height: 15%;
+}

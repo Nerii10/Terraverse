@@ -1,0 +1,189 @@
+
+.HomeBackgroundLandingContainer {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    background: url('/Backgrounds/background1.png');
+    background-position: center 40%;
+    position: relative;
+    background-size: 600px 500px;
+    background-repeat: repeat;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeDesc{
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.159);
+    background-color: white;
+    color:rgb(92, 92, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 15px;
+}
+
+.HomeBackgroundLandingContainer::before{
+    position: absolute;
+    content: ' ';
+    background: linear-gradient(to bottom, transparent 90%, var(--secondBackground));
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+}
+
+.HomeGrassTop{
+    background: url('/grasstop.png');
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-position: bottom;
+    width: 100%;
+    background-size: 150px 15px;
+    filter: saturate(2) hue-rotate(10deg);
+    background-repeat: repeat-x;
+}
+
+.HomePage{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    color:rgb(92, 92, 92);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HomeBackgroundText{
+    width: fit-content;
+    display: flex;
+    margin-top: -100px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    z-index: 2;
+}
+
+.HomePageMain{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.HomePageMainMobile{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.SectionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.Section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.SectionAnimation{
+    width: 40%;
+    position: relative;
+    z-index: 0;
+}
+
+.SectionAnimation::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    background: url('/grasstop.png');
+    background-repeat: repeat-x;
+    background-size: 150px 15px;
+    z-index: 1;
+    -webkit-mask-image: 
+      linear-gradient(to right, transparent 0%, white 2%, white 98%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+  }
+
+
+  .SectionMobileText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+}
+
+.SectionMobile{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.159);
+    border-radius: 10px;
+    position: relative;
+}
+
+.SectionMobileAnimation{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+}
+
+.SectionMobileAnimation::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    top: -5px;
+    height: 10%;
+    background: url('/grasstop.png');
+    background-repeat: repeat-x;
+    background-size: 150px 15px;
+    z-index: 1;
+    -webkit-mask-image: 
+      linear-gradient(to right, transparent 0%, white 5%, white 95%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+  }
+
+.HomeMechanics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.159);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.HomeMechanics
+
+.HomeMechanicsText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}

@@ -1,0 +1,100 @@
+.NavbarConainer{
+    position: fixed;
+    background-color: var(--defaultbackground);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color:gray;
+    box-shadow: var(--boxshadow);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.NavbarConainerLeft{
+    position: absolute;
+}
+
+.NavbarConainerRight{
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5vw
+}
+
+.NavbarIcon{
+    width: 50px;
+    padding-left: 10px;
+}
+
+.NavbarInput{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavbarSelectionBackgroundActive{
+    background-color: rgba(0, 0, 0, 0.103);
+    height: 25px;
+    z-index: -2;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    padding-inline: 10px;
+    transition: 0.5s ease;
+}
+
+.NavbarSelectionBackgroundInactive{
+    background-color: rgba(0, 0, 0, 0);
+    height: 25px;
+    z-index: -2;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    padding-inline: 10px;
+    transition: 0.5s ease;
+}
+
+.NavbarInputTextActive{
+    color: rgb(27, 27, 27);
+    transition: 0.5s ease;
+    position: relative;
+}
+
+
+.NavbarInputTextInactive{
+    color:gray;
+    transition: 0.5s ease;
+}
+
+.NavbarSelectionActive{
+    width: 70%;
+    height: 5px;
+    border-radius: 20px;
+    margin-top: 80px;
+    border:1px rgb(0, 124, 37) solid;
+    background-color: rgb(0, 188, 57);
+    content: '';
+    position: absolute;
+    transition: 0.5s ease;
+
+}
+
+.NavbarSelectionInactive{
+    width: 0%;
+    height: 5px;
+    border-radius: 20px;
+    margin-top: 80px;
+    border:1px rgba(90, 90, 90, 0.446) solid;
+    background-color: rgba(131, 131, 131, 0.551);
+    content: '';
+    padding-inline: 10px;
+    position: absolute;
+    transition: 0.5s ease;
+
+}
