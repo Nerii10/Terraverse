@@ -2340,26 +2340,6 @@
         "Type": "Boss"
     },
     {
-        "NPC ID": 469,
-        "Name": "Solar Pillar",
-        "Type": "Boss"
-    },
-    {
-        "NPC ID": 470,
-        "Name": "Nebula Pillar",
-        "Type": "Boss"
-    },
-    {
-        "NPC ID": 471,
-        "Name": "Vortex Pillar",
-        "Type": "Boss"
-    },
-    {
-        "NPC ID": 472,
-        "Name": "Stardust Pillar",
-        "Type": "Boss"
-    },
-    {
         "NPC ID": 473,
         "Name": "Ocram",
         "Type": "Boss"

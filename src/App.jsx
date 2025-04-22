@@ -10,6 +10,7 @@ import Home from './pages/Home/Home'
 //Styles
 import './App.css'
 import Bestiary from './pages/Bestiary/Bestiary'
+import Items from './pages/Items/Items'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
       case "Bestiary":
         return <Bestiary></Bestiary>
       case "Items":
-        return <h1>Przedmioty</h1>
+        return <Items></Items>
       case "Biomes":
         return <h1>Biomy</h1>
       case "Wordle":

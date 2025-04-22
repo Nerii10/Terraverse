@@ -573,7 +573,6 @@
         "Grab Bag Loot List": [
             "1107",
             "1108",
-            "1109",
             "1110",
             "1111",
             "1112",
@@ -1461,6 +1460,71 @@
             "897",
             "898"
         ]
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Ogre)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Betsy)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Flying Dutchman)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Mourning Wood)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Pumpking)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Everscream)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Santa-NK1)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Ice Queen)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Martian Saucer)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Ocram)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Lepus)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Turkor the Ungratefull)",
+        "Grab Bag Loot List": []
+    },
+    {
+        "Bag ID": "100",
+        "Name": "Treasure Bag (Dark Mage)",
+        "Grab Bag Loot List": []
     },
     {
         "Bag ID": "54",
