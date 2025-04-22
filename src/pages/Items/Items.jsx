@@ -7,6 +7,7 @@ import { useState, useEffect } from "react"
 
 //Data
 import Weapons from '../../data/json/items_data/items_weapon.json'
+import Tools from '../../data/json/items_data/items_tool.json'
 
 //Styles
 import './Items.css'
@@ -23,59 +24,20 @@ export default function Items() {
         { category: "Food", subcategories: [] }
     ];
 
+    //Utils
+
     const [CurrentFilter, setCurrentFilter] = useState(Filters[0]);
-    const [CurrentSubcategory, setCurrentSubcategory] = useState("");
     const [CurrentSearch, setCurrentSearch] = useState("");
     const [CurrentPick, setCurrentPick] = useState("")
 
-    function Library({Type}){
-        //Weapons
-        if(Type == "Weapons") {
-            const FilteredWeapons = Weapons;
-            return(
-            <>
-                <div className="Library">
-                    
-                    {FilteredWeapons?.map((Weapon,index)=>{
-                        return(
-                            <>  
-                                <motion.div 
-                                className={CurrentPick == Weapon ? "ItemEntryActive" : "ItemEntry"}
-                                onClick={()=>{setCurrentPick(Weapon)}}
-                                whileTap={{scale:0.9}}
-                                whileHover={{scale:1.1}}
-                                >
-                                    <img className="ItemEntryImage" src={`/Terraverse/img_sprites/${Weapon.Name.replace(/ /g, "_")}.png`}></img>
-                                </motion.div>
-                            </>
-                        )
-                    })}
+    //Data
 
-                </div>
-            </>
-            )
-        }
-        //Tools
-        if(Type == "Tools"){
-        return(
-            <>
-                <div className="Library">
-                        
-                    <p>wi</p>
-    
-                </div>
-            </>
-        )
-        }
-    }
+    const [FilteredWeapons, setFilteredWeapons] = useState(Weapons)
+    const [FilteredTools, setFilteredTools] = useState(Tools)
 
-    useEffect(() => {
-        if (CurrentFilter.subcategories.length > 0) {
-            setCurrentSubcategory("");
-        } else {
-            setCurrentSubcategory(""); 
-        }
-    }, [CurrentFilter]);
+    useEffect(()=>{
+        setFilteredWeapons(Weapons.filter(w => w.Name.toLowerCase().includes(CurrentSearch.toLowerCase())))
+    },[CurrentSearch])
 
     return (
         <>
@@ -115,29 +77,75 @@ export default function Items() {
 
                 <br />
 
-                {CurrentFilter.subcategories.length !== 0 && (
-                    <div className='FilterBox'>
-                        {CurrentFilter.subcategories.map((category, index) => (
-                            <motion.input
-                                key={category}
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                type='button'
-                                className={category === CurrentSubcategory ? 'FilterButtonActive' : 'FilterButton'}
-                                value={category}
-                                onClick={() => setCurrentSubcategory(category)}
-                            />
-                        ))}
-                    </div>
-                )}
-
                 {/* Info */}
                 
                 <br></br>
 
-                <Library Type={CurrentFilter.category}/>
+                <div className="Library">
+
+                    {/* Weapons */}
+                        {CurrentFilter.category === "Weapons" &&
+                            FilteredWeapons?.map((Weapon,index)=>{
+                                    return(
+                                        <>  
+                                            <motion.div 
+                                            className={CurrentPick === Weapon ? "ItemEntryActive" : "ItemEntry"}
+                                            onClick={()=>{setCurrentPick(Weapon)}}
+                                            whileTap={{scale:0.9}}
+                                            whileHover={{scale:1.1}}
+                                            >
+                                                <img className="ItemEntryImage" src={`/Terraverse/img_sprites/${Weapon.Name.replace(/ /g, "_")}.png`}></img>
+                                            </motion.div>
+                                        </>
+                                    )
+                            })
+                        }
+
+                    {/* Tools */}
+                        {CurrentFilter.category === "Tools" &&
+                            FilteredTools?.map((Tool,index)=>{
+                                    return(
+                                        <>  
+                                            <motion.div 
+                                            className={CurrentPick === Tool ? "ItemEntryActive" : "ItemEntry"}
+                                            onClick={()=>{setCurrentPick(Tool)}}
+                                            whileTap={{scale:0.9}}
+                                            whileHover={{scale:1.1}}
+                                            >
+                                                <img className="ItemEntryImage" src={`/Terraverse/img_sprites/${Tool.Name.replace(/ /g, "_")}.png`}></img>
+                                            </motion.div>
+                                        </>
+                                    )
+                            })
+                        }
+
+                    {/* Accesories */}
+                        {CurrentFilter.category === "Accessories" &&
+                                FilteredTools?.map((Tool,index)=>{
+                                        return(
+                                            <>  
+                                                <motion.div 
+                                                className={CurrentPick === Tool ? "ItemEntryActive" : "ItemEntry"}
+                                                onClick={()=>{setCurrentPick(Tool)}}
+                                                whileTap={{scale:0.9}}
+                                                whileHover={{scale:1.1}}
+                                                >
+                                                    <img className="ItemEntryImage" src={`/Terraverse/img_sprites/${Tool.Name.replace(/ /g, "_")}.png`}></img>
+                                                </motion.div>
+                                            </>
+                                        )
+                                })
+                         }
+                </div>
 
 
+
+
+
+
+
+
+                
             </div>
         </>
     );

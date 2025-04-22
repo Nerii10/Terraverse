@@ -18,9 +18,6 @@ export default function Navbar({setCurrentPage}){
             name: "Items"
         },
         {
-            name: "Biomes"
-        },
-        {
             name: "Wordle"
         },
     ]
